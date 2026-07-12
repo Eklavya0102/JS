@@ -104,7 +104,7 @@ console.log(sortnum);
 
 //reverse()-> reverse a number
 let rev_num=[1,2,3,4,5,6];
-rev_num.reverse();
+rev_num.reverse();wh
 console.log(rev_num);
 
 

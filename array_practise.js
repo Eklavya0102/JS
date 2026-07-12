@@ -2,14 +2,14 @@
 
 let marks=[85,97,44,37,76,60];
 let sum=0;
-
-// for (let i=0; i<marks.length; i++){
-//     sum+=marks[i];
-// } 
-// console.log(`Total students = ${marks.length} \nSum of mark = ${sum}`);
-// let average_mark=sum/marks.length;
-// console.log(`The average mark of class = ${average_mark}`)
-
+/*
+for (let i=0; i<marks.length; i++){
+    sum+=marks[i];
+} 
+console.log(`Total students = ${marks.length} \nSum of mark = ${sum}`);
+let average_mark=sum/marks.length;
+console.log(`The average mark of class = ${average_mark}`)
+*/
 //or 
 
 for(let each_mark of marks){
