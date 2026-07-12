@@ -104,8 +104,68 @@ console.log(sortnum);
 
 //reverse()-> reverse a number
 let rev_num=[1,2,3,4,5,6];
-rev_num.reverse();wh
+rev_num.reverse();
 console.log(rev_num);
+
+
+//map() -> similar to forEach just is that forEach doesnt creat new arry whereas map returns new array after operation
+let nums=[1,2,3,4,5];
+nums.map((ind_num)=>{
+    console.log(ind_num);
+});
+
+    //-> creating new array using map , the above is like forEach example
+let new_num_array = nums.map((sq_num)=>{
+    return sq_num**2;
+});
+
+console.log(new_num_array); //<-printing the new array
+
+
+//Filter() -> filter value based on some condition , example below it filters number based on condition given and stores in the new array
+let totalnum=[1,2,3,4,5,6,7,8,9,10];
+let EvenNum = totalnum.filter((num)=>{
+    return num % 2 == 0;
+})
+
+console.log(EvenNum); //<- copy of filtered out value
+
+/*
+reduce() : 
+-> perform some operation in the array(sum,multiply, taking average) and return a single value
+
+-> takes 2 parameter accumilator(result/initial value) and CurrentValue
+
+*/
+let red_arr=[1,2,3,4,5];
+const output= red_arr.reduce((result,current)=>{
+    return result + current;
+})
+
+console.log(output);  //<- 15 
+
+/*  explanation : 
+-> result (initial) and current parameters begins with the first two values , here 1 and 2 
+
+-> 1 is stored in result(initial) and 2 in current
+
+-> addition occurs and the result is stored in result(initial) parameter only and it repeats with next , in this case its 3 
+-> so now result 3 and current 3 and so on
+*/
+
+// another example of reduce : Greates number of an array
+const greatest= red_arr.reduce((previous,current)=>{
+    return previous > current ? previous:current ; 
+})
+
+console.log(greatest)
+
+
+
+
+
+
+
 
 
 
