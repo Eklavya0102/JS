@@ -43,3 +43,33 @@ for(let i=0; i<price.length; i++){
     price[i]-=discount; //changing the array
 }
 console.log(`New updated price = ${price}`)
+
+
+//Q.in the array of marks of students . FIltr out the marks of students greater than 80.
+
+let Stu_marks=[50,55.5,12,81,80.5,87,60,98,99,45,18,85,82,61,72,92,99.2,83];
+let dist= Stu_marks.filter((mar)=>{
+    return mar > 80;
+});
+
+console.log(dist.sort((a,b)=>a-b)); //<- displays mark in sorted order
+
+//Q.Take a number n as input. Create an array of the numbers form 1 to n
+let n=prompt("Enter number : ");
+let arr=[]; //<- empty array to store the value from loop
+for(let i=1; i<=n; i++){
+    arr[i-1]= i; //<- i-1 index ma i lai store garako
+}
+console.log(arr);
+
+//use reduce to take sum and multiplication of the above array produced
+let sum_arr= arr.reduce((prev,current)=>{
+    return prev + current;
+});
+console.log(sum_arr);
+
+//factorial
+let fact = arr.reduce((init,current)=>{
+    return init*current;
+});
+console.log(`Factorial = ${fact}`);
