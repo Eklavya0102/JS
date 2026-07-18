@@ -18,7 +18,6 @@ DOM(Document Object Modal) manipulation:
 
     document.querySelectorAll("id/class/tag") -> will return NodeList
 
-
 */
 
 let store= document.getElementById("myid");
