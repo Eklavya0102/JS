@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            margin: 0px;
+        }
+        div{
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: lightpink;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+        .tt {
+            font-size: 35px;
+            font-weight: bold;
+            color: purple;
+
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+        }
+
+        #paper,
+        #scissor,
+        #rock {
+            background-color: lightblue;
+
+            height: 125px;
+            width: 125px;
+            border-radius: 75px;
+
+            text-align: center;
+            transition: all 0.3s;
+        }
+        #paper:hover,
+        #scissor:hover,
+        #rock:hover{
+            cursor: pointer;
+            box-shadow: 0 0 0 5px rgba(0,0,0,0.8);
+           
+        }
+
+        .counter-board{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 80px;
+        }
+        .counter{
+            margin-right: 25px;
+            text-align: center;
+        }
+        .score-you,
+        .score-computer{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .message-cont{
+            background-color: black;
+            border-radius: 5px;
+            padding: 15px 10px;
+            
+            display: block;
+            width: 200px;
+            margin: 70px auto 0px;
+        }
+        #msg{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="tt">
+                Rock Paper Scissor
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="options">
+            <div class="option" id="rock">rock</div>
+            <div class="option" id="paper">paper</div>
+            <div class="option" id="scissor">scissor</div>
+        </div>
+        <div class="counter-board">
+            <div class="counter">
+                <div class="score-you">0</div>
+                <p>you</p>
+            </div>
+            <div class="counter">
+                <div class="score-computer">0</div>
+                <p>computer</p>
+            </div>
+        </div>
+
+        <div class="message-cont">
+            <p id="msg">Pick Your Move !</p>
+        </div>
+    </main>
+
+    <script src="ch9_game.js"></script>
+</body>
+
+</html>
