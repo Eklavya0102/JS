@@ -10,4 +10,4 @@ document.querySelector("body").prepend(btn);
 // console.log(document.querySelector("p").classList);
 
 document.querySelector(".question_2").classList.add("css_new");   //<both the previous and new class styles are applied
- //-> use remove to remove element 
+ //-> use "remove()" to remove element s
