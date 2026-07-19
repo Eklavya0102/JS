@@ -74,10 +74,6 @@ div.onmouseover=()=>{
     console.log("The pointer is inside the div");
 }
 
-// div.addEventListener("mouseover",()=>{
-//     console.log("hello you are inside the div");
-// });
-
 div.addEventListener("click",()=>{
     console.log("dive clicked");
 })
