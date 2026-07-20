@@ -19,14 +19,14 @@ const drawGame = () =>{
     msg_container.style.backgroundColor="orange";
 };
 
-const winner= (userWin)=>{
+const winner= (userWin, computerChoice, userChoise)=>{
     if(userWin){
-        message.innerText="You Win !"
+        message.innerText=`You Win ! ${userChoise} beats ${computerChoice}`;
         msg_container.style.backgroundColor="green";
         userScore++;
         user_Score.innerText=userScore;
     }else{
-        message.innerText="You Loose !"
+        message.innerText=`You lost ! ${computerChoice} beats ${userChoise}`
         msg_container.style.backgroundColor="red";
         computerScore++;
         computer_Score.innerText=computerScore;
@@ -42,12 +42,12 @@ const playgame= (userChoise)=> {
         let userWin=true;
         if(userChoise== "rock"){
             userWin = computerChoice =='paper' ? false : true;
-        }else if(computerChoice== "paper"){
+        }else if(userChoise== "paper"){
             userWin = computerChoice == "scissors"? false : true;
         }else{
             userWin = computerChoice === "rock" ? false : true ;
         }
-        winner(userWin);
+        winner(userWin, computerChoice, userChoise);
     }
 
 };
