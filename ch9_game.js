@@ -34,9 +34,7 @@ const winner= (userWin)=>{
 }
 
 const playgame= (userChoise)=> {
-    console.log("user choose = ",userChoise);
     const computerChoice = genComputerChoice();
-    console.log("computer choose = ",computerChoice);
 
     if(userChoise==computerChoice){
         drawGame();
